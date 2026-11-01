@@ -1,0 +1,21 @@
+cat > .gitignore << 'EOF'
+# secrets
+.env
+
+# data (too big for git, README explains where to download)
+data/*
+!data/.gitkeep
+
+# airflow
+logs/
+airflow.db
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# dbt
+target/
+dbt_packages/
+EOF
