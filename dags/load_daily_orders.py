@@ -113,8 +113,8 @@ def check_quality(ds: str) -> None:
 
 with DAG(
     dag_id="load_daily_orders",
-    start_date=datetime(2017, 1, 1),
-    end_date=datetime(2017, 1, 31),
+    start_date=datetime(2016, 9, 4),
+    end_date=datetime(2018, 10, 17),
     schedule="@daily",
     catchup=True,
     max_active_runs=1,
